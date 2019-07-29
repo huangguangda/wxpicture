@@ -1,0 +1,73 @@
+Page {
+  background-color: #f1f1f1;
+}
+
+.swiper-tab {
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 33.33%;
+  color: #797979;
+}
+
+.on {
+  color: #ca0c16;
+  border-bottom: 5rpx solid #ca0c16;
+}
+
+.swiper-box {
+  display: block;
+  /* height: 100%; */
+  width: 100%;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: 540rpx;
+}
+
+.images-box {
+  width: 100%;
+  height: 360rpx;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+  color: #444;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  color: #999;
+}
+
+/* 前半部分 */
+
+.desc {
+  width: 95%;
+  margin-left: 10px;
+}
+
+/* 每条信息 */
+
+.desc text {
+  margin-right: 10px;
+}

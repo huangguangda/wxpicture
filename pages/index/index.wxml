@@ -1,0 +1,53 @@
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">僵尸</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">吃货僵</view>
+  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">大乱斗</view>
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+  <swiper-item>
+    <view wx:for="{{dataList}}" class="item">
+      <view class="title">{{item.title}}</view>
+      <view class="pic">
+        <image src="{{item.img}}" style="width:100%;height:203px;"></image>
+      </view>
+
+      <view class="info">
+        <view class="desc">
+          <text>{{item.type}}</text>
+          <text>{{item.time}}</text>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view wx:for="{{she}}" class="item">
+      <view class="title">{{item.title}}</view>
+      <view class="pic">
+        <image src="{{item.img}}" style="width:100%;height:203px;"></image>
+      </view>
+
+      <view class="info">
+        <view class="desc">
+          <text>{{item.type}}</text>
+          <text>{{item.time}}</text>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view class="pic">
+      <image src="{{image}}" style="width:100%;height:203px;"></image>
+    </view>
+    <!-- <swiper class="images-box" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" interval="{{interval}}" duration="{{duration}}" bindchange="bindchange">
+      <block wx:for="{{imgUrls}}" wx:key='*this'>
+        <swiper-item>
+          <image src="{{item.url}}" class="slide-image" id='{{item.target}}' />
+        </swiper-item>
+      </block>
+    </swiper>-->
+
+  </swiper-item> 
+
+</swiper>
